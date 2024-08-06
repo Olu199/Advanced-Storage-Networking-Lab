@@ -14,4 +14,4 @@ By following this guide, you will be able to set up a robust and efficient Proxm
 | **Switch**  | NETGEAR 5-Port Multi-Gigabit Ethernet Unmanaged Network Switch | NETGEAR 5-Port Multi-Gigabit Ethernet Unmanaged Network Switch         |
 
 
-[[Proxmox Lab Setup and Configuration Guide|TBC]]
+[Proxmox Lab Setup and Configuration Guide](Proxmox%20Lab%20Setup%20and%20Configuration%20Guide.md)
