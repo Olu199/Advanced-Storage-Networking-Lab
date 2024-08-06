@@ -22,6 +22,6 @@ This guide takes you through everything from the initial setup to advanced confi
 #### Vyos VM Setup
 - [Lab Switches and Routers](Lab%20Switches%20and%20Routers.md)
 
-#### Ontap VM Setup
+#### ONTAP VM Setup
 - [ONTAP Node and Cluster Setup](ONTAP%20Node%20and%20Cluster%20Setup.md)
 - [ONTAP Cluster Setup Guide](ONTAP%20Cluster%20Setup%20Guide.md)
