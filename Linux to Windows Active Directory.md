@@ -158,12 +158,12 @@ On your Windows machine, update the Kerberos registry settings to ensure compati
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\Kerberos\Parameters
 ```
 
-![[Pasted image 20240806091739.png]]
-![[Pasted image 20240806091802.png]]
-![[Pasted image 20240806091837.png]]
-![[Pasted image 20240806091910.png]]
-![[Pasted image 20240806092015.png]]
-![[Pasted image 20240806092114.png]]
+![Pasted image 20240806091739](https://github.com/user-attachments/assets/1a24e0d3-3ae9-4573-95a3-14dec8aceb62)
+![Pasted image 20240806091802](https://github.com/user-attachments/assets/bac21c82-ac92-4cef-acc0-0223f610811f)
+![Pasted image 20240806091837](https://github.com/user-attachments/assets/966dd0fc-bbd8-4bb7-bdad-384c9f62c7a7)
+![Pasted image 20240806091910](https://github.com/user-attachments/assets/a37dd5fe-e269-46d1-96d6-8c0811be4b56)
+![Pasted image 20240806092015](https://github.com/user-attachments/assets/c7b8c6ae-bfdc-4467-a23d-a344589ca897)
+![Pasted image 20240806092114](https://github.com/user-attachments/assets/ecda1a45-aa0c-478b-b5f0-771ced2f9d34)
 If the `Parameters` key does not exist, you need to create it. Add or update the following DWORD values as needed:
 
 - **AllowTgtSessionKey**: Set this to `1` to allow TGT session key.
