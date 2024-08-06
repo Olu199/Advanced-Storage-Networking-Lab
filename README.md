@@ -1,7 +1,10 @@
 # Advanced-Storage-Networking-Lab
-While others will benefit from this configuration, I designed this lab for storage network engineers and administrators.
 
-This guide provides detailed instructions for setting up a Proxmox lab environment. It covers everything from initial setup to advanced configurations, making it suitable for students at any career stage. This document is modular and can be easily updated or forked for improvements and additional information. I designed this lab specifically for storage network engineers and administrators; however, the lab is cross-functional. Click through the Table of Contents to navigate each topic, and do not forget to share this git repo, like, subscribe, and all that fun stuff I do not know how to do.
+While this configuration will benefit all home lab enthusiasts, it is crafted with storage network engineers, administrators, and cloud engineers in mind.
+
+This guide takes you through everything from the initial setup to advanced configurations of all the VMs, simulating a real project and enterprise environment. It’s perfect for professionals at any career stage. The document is modular, making it easy to update or fork for improvements. 
+
+#### Click through the Table of Contents to navigate each topic. And remember to share this git repo, like, subscribe, and all that fun stuff I haven't mastered yet.
 
 ## Table of Contents
 
