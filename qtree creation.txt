@@ -1,2 +1,0 @@
-qtree create -vserver WinA_ontap7 -volume WinA_ontap7_vol1 -qtree q01 -security-style unix -oplock-mode enable -unix-permissions ---rwxrwxrwx
-qtree create -vserver WinB_ontap7 -volume WinB_ontap7_vol1 -qtree q01 -security-style unix -oplock-mode enable -unix-permissions ---rwxrwxrwx
