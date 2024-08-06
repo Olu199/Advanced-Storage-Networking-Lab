@@ -1,4 +1,4 @@
-Follow this to get started: [link](https://github.com/MRCzap/ontapsimulator)
+## Follow this to get started: [link](https://github.com/MRCzap/ontapsimulator)
 
 
 
