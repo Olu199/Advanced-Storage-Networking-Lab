@@ -1,7 +1,6 @@
+Follow this to get started: [link](https://github.com/MRCzap/ontapsimulator)
 
-After following the steps in this link https://github.com/MRCzap/ontapsimulator follow the steps bellow
 
-After following the steps in this [link](https://github.com/MRCzap/ontapsimulator), follow the steps below:
 
 ### 1. Convert the Node to a Template
 Convert the VM to a template before you boot. This ensures you can create multiple node instances without repeating the entire setup process, making your cluster setup a lot easier. Add these network interfaces `vmbr2` to the template:
