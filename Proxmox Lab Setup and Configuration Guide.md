@@ -2,7 +2,7 @@ This guide provides detailed instructions for setting up a Proxmox lab environme
 
 ## Table of Contents
 
-1. [[Prerequisites|Prerequisites]]
-2. [[Prepare Proxmox Environment|Prepare Proxmox Environment]]
-3. [[Downloading all Virtual Assets|Downloading all Virtual Assets]]
-4. [[Linux to Windows Active Directory|Linux to Windows Active Directory]]
+1. [Prerequisites](Prerequisites.md)
+2. [Prepare Proxmox Environment](Prepare%20Proxmox%20Environment.md)
+3. [Downloading all Virtual Assets](Downloading%20all%20Virtual%20Assets.md)
+4. [Linux to Windows Active Directory](Linux%20to%20Windows%20Active%20Directory.md)
