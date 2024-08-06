@@ -11,6 +11,6 @@ This guide provides detailed instructions for setting up a Proxmox lab environme
 5. [Prepare Proxmox Environment](Prepare%20Proxmox%20Environment.md)
 7. [Lab Switches and Routers](Lab%20Switches%20and%20Routers.md)
 8. [Servers and Active Directories](Servers%20and%20Active%20Directories.md)
-9. [Client Computers and Users](Client%20Computers%20and%20Users.md)
+9. [Client Computers and Users Setup](Client%20Computers%20and%20Users%20Setup.md)
 10. [Join All Windows Clients OS to Windows Active Directory](Join%20All%20Windows%20Clients%20OS%20to%20Windows%20Active%20Directory.md)
 11. [Join All Linux Clients to Windows Active Directory](Linux%20to%20Windows%20Active%20Directory.md)
