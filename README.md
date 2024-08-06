@@ -5,12 +5,12 @@ This guide provides detailed instructions for setting up a Proxmox lab environme
 
 ## Table of Contents
 
-1. [Prerequisites](Prerequisites.md)
-2. [Lab Network Topology](Lab%20Network%20Topology.md)
-3. [Downloading all Virtual Assets](Downloading%20all%20Virtual%20Assets.md)
-5. [Prepare Proxmox Environment](Prepare%20Proxmox%20Environment.md)
-7. [Lab Switches and Routers](Lab%20Switches%20and%20Routers.md)
-8. [Servers and Active Directories](Servers%20and%20Active%20Directories.md)
-9. [Client Computers and Users Setup](Client%20Computers%20and%20Users%20Setup.md)
-10. [Join All Windows Clients OS to Windows Active Directory](Join%20All%20Windows%20Clients%20OS%20to%20Windows%20Active%20Directory.md)
-11. [Join All Linux Clients to Windows Active Directory](Linux%20to%20Windows%20Active%20Directory.md)
+- [Prerequisites](Prerequisites.md)
+- [Lab Network Topology](Lab%20Network%20Topology.md)
+- [Downloading all Virtual Assets](Downloading%20all%20Virtual%20Assets.md)
+- [Prepare Proxmox Environment](Prepare%20Proxmox%20Environment.md)
+- [Lab Switches and Routers](Lab%20Switches%20and%20Routers.md)
+- [Servers and Active Directories](Servers%20and%20Active%20Directories.md)
+- [Client Computers and Users Setup](Client%20Computers%20and%20Users%20Setup.md)
+- [Join All Windows Clients OS to Windows Active Directory](Join%20All%20Windows%20Clients%20OS%20to%20Windows%20Active%20Directory.md)
+- [Join All Linux Clients to Windows Active Directory](Join%20All%20Linux%20Clients%20to%20Windows%20Active%20Directory.md)
