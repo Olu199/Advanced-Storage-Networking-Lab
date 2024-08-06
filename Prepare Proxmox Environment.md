@@ -42,8 +42,9 @@
 
 Give vmbr5 the first port on the network interface card as a bridge port for both nodes. It should look like this:
 
-![[vmbradapters1-6pve.png]]
+![vmbradapters1-6pve](https://github.com/user-attachments/assets/36ee8c54-903d-4243-9291-958970ac4f0c)
+
 
 This concludes the physical setup.
 
-[[Proxmox Lab Setup and Configuration Guide|TBC]]
+[Proxmox Lab Setup and Configuration Guide](Proxmox%20Lab%20Setup%20and%20Configuration%20Guide.md)
