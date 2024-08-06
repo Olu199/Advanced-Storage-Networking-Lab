@@ -8,7 +8,8 @@ Ensure your Ubuntu machine has the required packages installed. Open a terminal 
 sudo apt update
 sudo apt install realmd sssd adcli samba-common-bin krb5-user
 ```
-![[Pasted image 20240806084510.png]]
+![Pasted image 20240806084510](https://github.com/user-attachments/assets/b7397c7b-3e64-43b8-9c10-68ca39635895)
+
 ### 2. **Configure Kerberos**
 
 During the installation, you’ll be prompted to configure Kerberos. You can also manually edit the Kerberos configuration file:
@@ -196,4 +197,4 @@ su - u1@winb.com
 ```
 
 
-[[Proxmox Lab Setup and Configuration Guide|TBC]]
+[Proxmox Lab Setup and Configuration Guide](Proxmox%20Lab%20Setup%20and%20Configuration%20Guide.md)
