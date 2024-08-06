@@ -18,3 +18,4 @@ This guide takes you through everything from the initial setup to advanced confi
 - [Join All Windows Clients OS to Windows Active Directory](Join%20All%20Windows%20Clients%20OS%20to%20Windows%20Active%20Directory.md)
 - [Join All Linux Clients to Windows Active Directory](Join%20All%20Linux%20Clients%20to%20Windows%20Active%20Directory.md)
 - [ONTAP Node and Cluster Setup.md](ONTAP%20Node%20and%20Cluster%20Setup.md)
+- [ONTAP Cluster Setup Guide](ONTAP%20Cluster%20Setup%20Guide.md)
