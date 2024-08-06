@@ -1,0 +1,2 @@
+administrator@vsphere.local
+VCSA.wina.com:5480

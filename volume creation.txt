@@ -1,0 +1,4 @@
+vol create -vserver WinA_ontap7 -volume WinA_ontap7_vol1 -aggregate aggr1_ontap7_01_fcal -size 100mb -state online -policy default -unix-permissions ---rwxrwxrwx -type RW -snapshot-policy default -foreground true -tiering-policy none -junction-path /WinA_ontap7_vol1
+vol create -vserver WinB_ontap7 -volume WinB_ontap7_vol1 -aggregate aggr2_ontap7_01_fcal -size 100mb -state online -policy default -unix-permissions ---rwxrwxrwx -type RW -snapshot-policy default -foreground true -tiering-policy none -junction-path /WinB_ontap7_vol1
+
+vol modify -vserver Win* -volume !*root -autosize-mode grow_shrink

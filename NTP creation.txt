@@ -1,0 +1,5 @@
+ntp server create -server 172.16.192.2
+ntp server delete -server 172.16.96.10
+set d
+
+cluster time-service ntp status show

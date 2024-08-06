@@ -1,0 +1,58 @@
+stop and delete existing lifs
+
+
+IPspace Broadcast                                         Update
+Name    Domain Name    MTU  Port List                     Status Details
+------- ----------- ------  ----------------------------- --------------
+Cluster Cluster       9000
+                            ontap7-01:e0a                 complete
+                            ontap7-01:e0b                 complete
+                            ontap7-02:e0a                 complete
+                            ontap7-02:e0b                 complete
+Default Data_NFS_CIFS_ISCSI 1500
+                            ontap7-01:e0e                 complete
+                            ontap7-01:e0f                 complete
+                            ontap7-01:e0g                 complete
+                            ontap7-01:e0h                 complete
+                            ontap7-02:e0e                 complete
+                            ontap7-02:e0f                 complete
+                            ontap7-02:e0g                 complete
+                            ontap7-02:e0h                 complete
+        Managment     1500
+                            ontap7-01:e0c                 complete
+                            ontap7-01:e0d                 complete
+                            ontap7-02:e0c                 complete
+                            ontap7-02:e0d                 complete
+3 entries were displayed.
+
+
+broadcast-domain rename -broadcast-domain Default -new-name Managment 
+.
+subnet create -subnet-name NFS -broadcast-domain Data_NFS_CIFS_ISCSI -ip-ranges 172.16.0.6-172.16.0.19 -subnet 172.16.0.0/19 -gateway 172.16.0.1
+
+
+net int create -vserver ontap14 -lif cluster_mgmt_01 -service-policy default-management -role cluster-mgmt -address 172.16.32.6 -netmask 255.255.224.0 -home-node ontap14-01 -home-port e0c -status-admin up -failover-policy broadcast-domain-wide -firewall-policy mgmt -auto-revert false -failover-group Managment -broadcast-domain Managment
+net int create -vserver ontap14 -lif cluster_mgmt_02 -service-policy default-management -role cluster-mgmt -address 172.16.32.7 -netmask 255.255.224.0 -home-node ontap14-02 -home-port e0d -status-admin up -failover-policy broadcast-domain-wide -firewall-policy mgmt -auto-revert false -failover-group Managment -broadcast-domain Managment
+net int create -vserver ontap14 -lif node_mgmt_01 -service-policy default-management -role node-mgmt -address 172.16.32.4 -netmask 255.255.224.0 -home-node ontap14-01 -home-port e0c -status-admin up -failover-policy broadcast-domain-wide -firewall-policy mgmt -auto-revert true -failover-group Managment -broadcast-domain Managment
+net int create -vserver ontap14 -lif node_mgmt_02 -service-policy default-management -role node-mgmt -address 172.16.32.5 -netmask 255.255.224.0 -home-node ontap14-02 -home-port e0d -status-admin up -failover-policy broadcast-domain-wide -firewall-policy mgmt -auto-revert true -failover-group Managment -broadcast-domain Managment
+
+
+ontap142-01
+ontap142-02
+
+ifg create -node ontap7-01 -ifgrp a0a  -distr-func ip  -mode singlemode
+ifg create -node ontap7-02 -ifgrp a0a  -distr-func ip  -mode singlemode
+
+
+ifgrp add-port -node ontap7-01 -ifgrp a0a -port e0e
+ifgrp add-port -node ontap7-01 -ifgrp a0a -port e0f
+ifgrp add-port -node ontap7-01 -ifgrp a0a -port e0g
+ifgrp add-port -node ontap7-01 -ifgrp a0a -port e0h
+
+ifgrp add-port -node ontap7-02 -ifgrp a0a -port e0e
+ifgrp add-port -node ontap7-02 -ifgrp a0a -port e0f
+ifgrp add-port -node ontap7-02 -ifgrp a0a -port e0g
+ifgrp add-port -node ontap7-02 -ifgrp a0a -port e0h
+
+
+

@@ -1,0 +1,3 @@
+\\cifs1.wina.com\cifs_vol1
+\\multi_hd_cifs\home_cifs_vol1
+\\multicn.wina.com\
