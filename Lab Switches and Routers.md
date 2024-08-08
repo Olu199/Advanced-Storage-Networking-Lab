@@ -119,12 +119,14 @@ set protocols static route 172.16.192.0/19 next-hop 192.168.0.2
 Rename each router for easy identification:
 ```bash
 configure
-set system login user vyos-pve authentication plaintext-password 'new-password'
 set system login user vyos-pve full-name 'Node1 Router2'
+set system login user vyos-pve authentication plaintext-password 'new-password'
 commit
 save
-
-# Optional: delete the old user
+```
+Login using vyos-pve and the new-password. Then delete old user vyos
+```bash
+# configure
 delete system login user vyos
 commit
 save
