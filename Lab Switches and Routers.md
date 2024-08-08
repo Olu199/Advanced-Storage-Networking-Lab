@@ -113,3 +113,21 @@ set protocols static route 172.16.192.0/19 next-hop 192.168.0.2
    save
    exit
    ```
+
+
+
+Rename each router for easy identification:
+```bash
+configure
+set system login user vyos-pve authentication plaintext-password 'new-password'
+set system login user vyos-pve full-name 'VyOS PVE User'
+set system login user vyos-pve group sudo
+commit
+save
+
+# Optional: delete the old user
+delete system login user vyos
+commit
+save
+exit
+```
