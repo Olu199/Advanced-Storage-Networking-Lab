@@ -120,8 +120,7 @@ Rename each router for easy identification:
 ```bash
 configure
 set system login user vyos-pve authentication plaintext-password 'new-password'
-set system login user vyos-pve full-name 'VyOS PVE User'
-set system login user vyos-pve group sudo
+set system login user vyos-pve full-name 'Node1 Router2'
 commit
 save
 
