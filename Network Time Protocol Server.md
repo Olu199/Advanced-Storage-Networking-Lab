@@ -1,4 +1,4 @@
- d### Steps to Configure Windows Server 2016 as an NTP Server
+### Steps to Configure Windows Server 2016 as an NTP Server
 
 1. **Open the Command Prompt as Administrator:**
    - Press `Win + X` and select "Command Prompt (Admin)" or "Windows PowerShell (Admin)".
