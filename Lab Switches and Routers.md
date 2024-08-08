@@ -14,10 +14,11 @@
 
 3. Configure static routes:
    ```bash
-   set protocols static route 0.0.0.0/0 next-hop 10.1.10.1
-   set protocols static route 172.16.0.0/19 next-hop 192.168.0.1
-   set protocols static route 172.16.32.0/19 next-hop 192.168.0.1
-   set protocols static route 172.16.64.0/19 next-hop 192.168.0.1
+set protocols static route 0.0.0.0/0 next-hop 10.1.10.1
+set protocols static route 172.16.96.0/19 next-hop 192.168.0.2
+set protocols static route 172.16.128.0/19 next-hop 192.168.0.2
+set protocols static route 172.16.160.0/19 next-hop 192.168.0.2
+set protocols static route 172.16.192.0/19 next-hop 192.168.0.2
    ```
 
 4. Set DNS servers:
@@ -65,6 +66,7 @@
    set interfaces ethernet eth1 address 172.16.128.1/19
    set interfaces ethernet eth2 address 172.16.160.1/19
    set interfaces ethernet eth3 address 10.1.10.61/19
+   set interfaces ethernet eth4 address 172.16.192.1/19
    ```
 
 3. Configure static routes:
@@ -73,6 +75,7 @@
    set protocols static route 172.16.0.0/19 next-hop 192.168.0.1
    set protocols static route 172.16.32.0/19 next-hop 192.168.0.1
    set protocols static route 172.16.64.0/19 next-hop 192.168.0.1
+
    ```
 
 4. Set DNS servers:
