@@ -126,7 +126,7 @@ save
 ```
 Login using vyos-pve and the new-password. Then delete old user vyos
 ```bash
-# configure
+configure
 delete system login user vyos
 commit
 save
