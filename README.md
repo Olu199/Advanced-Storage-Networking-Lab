@@ -15,7 +15,7 @@ This guide takes you through everything from the initial setup to advanced confi
 
 #### Servers and Client Computer VM Setup
 - [Servers and Active Directories](Servers%20and%20Active%20Directories.md)
-- [Network Time Protocol Server]()
+- [Network Time Protocol Server](Network%20Time%20Protocol%20Server.md)
 - [Client Computers and Users Setup](Client%20Computers%20and%20Users%20Setup.md)
 - [Join All Windows Clients OS to Windows Active Directory](Join%20All%20Windows%20Clients%20OS%20to%20Windows%20Active%20Directory.md)
 - [Join All Linux Clients to Windows Active Directory](Join%20All%20Linux%20Clients%20to%20Windows%20Active%20Directory.md)
