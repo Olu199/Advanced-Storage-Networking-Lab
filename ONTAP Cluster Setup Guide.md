@@ -39,29 +39,37 @@ You will need to make two full clones from the template:
 
 I like to use proxmox to access the vloader and here is how:
 
+
+
+```bash
+root@pve1:~# qm set 125 -serial0 socket
+update VM 125: -serial0 socket
+root@pve1:~# qm terminal 125
+starting serial terminal on interface serial0 (press Ctrl+O to exit)
+VLOADER>
+```
 ```bash
 qm set 125 -serial0 socket
 ```
 ```bash
-root@pve1:~# qm set 125 -serial0 socket
-update VM 125: -serial0 socket
-```
-```bash
 qm terminal 125
-```
-```bash
-root@pve1:~# qm terminal 125
-starting serial terminal on interface serial0 (press Ctrl+O to exit)
-
-VLOADER>
 ```
 
 When you see the normal boot process for node 2, change the Serial Number and System ID for this node:
 
 ```bash
-VLOADER> setenv SYS_SERIAL_NUM 4034389-06-2
-VLOADER> setenv bootarg.nvram.sysid 4034389062
+setenv SYS_SERIAL_NUM 4034389-06-2
 ```
+```bash
+setenv bootarg.nvram.sysid 4034389062
+```
+```bash
+printenv SYS_SERIAL_NUM
+```
+```bash
+printenv bootarg.nvram.sysid
+```
+
 
 ### Deployment
 After completing the above steps for each node, deploy ONTAP using the provided GitHub link.
