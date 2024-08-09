@@ -1,23 +1,3 @@
-to access vloader form promox shell
-
-```bash
-qm set 125 -serial0 socket
-```
-```bash
-root@pve1:~# qm set 125 -serial0 socket
-update VM 125: -serial0 socket
-```
-```bash
-qm terminal 125
-```
-```bash
-root@pve1:~# qm terminal 125
-starting serial terminal on interface serial0 (press Ctrl+O to exit)
-
-VLOADER>
-```
-
-
 
 
 ```bash
