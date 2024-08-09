@@ -4,7 +4,7 @@ set interfaces ethernet eth0 address 169.254.1.1/16
 commit
 save
 exit
-
+Vmbr7 = address 192.168.1.1/24
 Management Switch for Each Device
 ```bash
 configure
@@ -16,7 +16,7 @@ set interfaces ethernet eth2 address 172.16.1.1/24
 set interfaces ethernet eth2 description ontap14
 set interfaces ethernet eth3 address 172.16.2.1/24
 set interfaces ethernet eth3 description esxi
-set interfaces ethernet eth4 address 192.168.1.1/24
+set interfaces ethernet eth4 address 192.168.1.2/24
 set interfaces ethernet eth4 description inter-devices
 commit
 save
@@ -30,6 +30,7 @@ set interfaces ethernet eth0 address 192.168.0.2/24
 set interfaces ethernet eth0 description inter-router
 set interfaces ethernet eth1 address 172.18.0.1/24
 set interfaces ethernet eth1 description data
+set interfaces ethernet eth2 address 192.168.1.3/24
 set interfaces ethernet eth2 description inter-devices
 commit
 save
