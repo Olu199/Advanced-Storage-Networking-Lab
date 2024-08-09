@@ -1,3 +1,13 @@
+cluster interconnect switch
+configure
+set interfaces ethernet eth0 address 169.254.1.1/16
+commit
+save
+exit
+
+
+
+
 Here is your corrected text:
 
 ### NAT Configuration:
