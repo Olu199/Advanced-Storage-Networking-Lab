@@ -5,8 +5,23 @@ commit
 save
 exit
 
-
-
+Management Switch for Each Device
+```bash
+configure
+set interfaces ethernet eth0 address 192.168.0.1/24
+set interfaces ethernet eth0 description inter-router
+set interfaces ethernet eth1 address 172.16.0.1/24
+set interfaces ethernet eth1 description ontap7
+set interfaces ethernet eth2 address 172.16.1.1/24
+set interfaces ethernet eth2 description ontap14
+set interfaces ethernet eth3 address 172.16.2.1/24
+set interfaces ethernet eth3 description esxi
+set interfaces ethernet eth4 address 192.168.1.1/24
+set interfaces ethernet eth4 description inter-devices
+commit
+save
+exit
+```
 
 Here is your corrected text:
 
