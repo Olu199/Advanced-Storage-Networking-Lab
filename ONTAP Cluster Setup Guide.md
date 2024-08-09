@@ -48,6 +48,13 @@ root@pve1:~# qm terminal 125
 starting serial terminal on interface serial0 (press Ctrl+O to exit)
 VLOADER>
 ```
+```bash
+qm set 125 -serial0 socket
+```
+```bash
+qm terminal 125
+```
+
 At the VLOADER> prompt, enter the following commands:
 
 ```bash
@@ -61,12 +68,7 @@ set console="comconsole,vidconsole"
 ```bash
 set comconsole_speed=115200
 ```
-```bash
-qm set 125 -serial0 socket
-```
-```bash
-qm terminal 125
-```
+
 
 When you see the normal boot process for node 2, change the Serial Number and System ID for this node:
 
