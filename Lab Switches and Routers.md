@@ -23,6 +23,19 @@ save
 exit
 ```
 
+Data Router
+```bash
+configure
+set interfaces ethernet eth0 address 192.168.0.2/24
+set interfaces ethernet eth0 description inter-router
+set interfaces ethernet eth1 address 172.18.0.1/24
+set interfaces ethernet eth1 description data
+set interfaces ethernet eth2 description inter-devices
+commit
+save
+exit
+```
+
 Here is your corrected text:
 
 ### NAT Configuration:
