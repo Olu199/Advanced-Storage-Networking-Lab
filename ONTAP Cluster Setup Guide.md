@@ -48,6 +48,19 @@ root@pve1:~# qm terminal 125
 starting serial terminal on interface serial0 (press Ctrl+O to exit)
 VLOADER>
 ```
+At the VLOADER> prompt, enter the following commands:
+
+```bash
+set console="comconsole,vidconsole"
+set comconsole_speed=115200
+boot
+```
+```bash
+set console="comconsole,vidconsole"
+```
+```bash
+set comconsole_speed=115200
+```
 ```bash
 qm set 125 -serial0 socket
 ```
@@ -68,6 +81,9 @@ printenv SYS_SERIAL_NUM
 ```
 ```bash
 printenv bootarg.nvram.sysid
+```
+```bash
+boot
 ```
 
 
