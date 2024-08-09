@@ -37,6 +37,25 @@ You will need to make two full clones from the template:
 
 ![image](https://github.com/user-attachments/assets/538b4ba3-2ed4-407d-a5c7-a7c246088030)
 
+I like to use proxmox to access the vloader and here is how:
+
+```bash
+qm set 125 -serial0 socket
+```
+```bash
+root@pve1:~# qm set 125 -serial0 socket
+update VM 125: -serial0 socket
+```
+```bash
+qm terminal 125
+```
+```bash
+root@pve1:~# qm terminal 125
+starting serial terminal on interface serial0 (press Ctrl+O to exit)
+
+VLOADER>
+```
+
 When you see the normal boot process for node 2, change the Serial Number and System ID for this node:
 
 ```bash
