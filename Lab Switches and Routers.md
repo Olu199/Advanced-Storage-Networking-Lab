@@ -41,6 +41,7 @@ set protocols static route 0.0.0.0/0 next-hop 10.1.10.1
 set protocols static route 172.16.0.0/24 next-hop 192.168.0.2
 set protocols static route 172.16.1.0/24 next-hop 192.168.0.2
 set protocols static route 172.16.2.0/24 next-hop 192.168.0.2
+set protocols static route 172.16.3.0/24 next-hop 192.168.0.2
 set protocols static route 172.18.0.0/24 next-hop 192.168.0.3
 ```
 
@@ -77,6 +78,7 @@ set interfaces ethernet eth0 address 10.1.10.62/24
 set interfaces ethernet eth1 address 172.16.0.1/24
 set interfaces ethernet eth2 address 172.16.1.1/24
 set interfaces ethernet eth3 address 172.16.2.1/24
+set interfaces ethernet eth4 address 172.16.3.1/24
 ```
 
 #### **Routing Setup:**
