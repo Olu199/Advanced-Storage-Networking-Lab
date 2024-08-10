@@ -42,6 +42,7 @@ set protocols static route 172.16.0.0/24 next-hop 192.168.0.2
 set protocols static route 172.16.1.0/24 next-hop 192.168.0.2
 set protocols static route 172.16.2.0/24 next-hop 192.168.0.2
 set protocols static route 172.18.0.0/24 next-hop 192.168.0.3
+set protocols static route 172.18.1.0/24 next-hop 192.168.0.4
 ```
 
 #### **NAT Configuration:**
