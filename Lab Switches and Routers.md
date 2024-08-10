@@ -38,11 +38,11 @@ set interfaces ethernet eth1 address 192.168.1.1/24
 #### **Routing Setup:**
 ```shell
 set protocols static route 0.0.0.0/0 next-hop 10.1.10.1
-set protocols static route 172.16.0.0/24 next-hop 192.168.0.2
-set protocols static route 172.16.1.0/24 next-hop 192.168.0.2
-set protocols static route 172.16.2.0/24 next-hop 192.168.0.2
-set protocols static route 172.18.0.0/24 next-hop 192.168.0.3
-set protocols static route 172.18.1.0/24 next-hop 192.168.0.4
+set protocols static route 172.16.6.0/24 next-hop 192.168.0.5
+set protocols static route 172.16.7.0/24 next-hop 192.168.0.5
+set protocols static route 172.16.8.0/24 next-hop 192.168.0.5
+set protocols static route 172.18.2.0/24 next-hop 192.168.0.6
+set protocols static route 192.168.1.0/24 next-hop 192.168.0.1
 ```
 
 #### **NAT Configuration:**
