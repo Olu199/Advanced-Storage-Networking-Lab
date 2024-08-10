@@ -1,9 +1,18 @@
-Here's the updated version of the documentation with the necessary changes for the storage interconnect:
-
----
-
 # Network Setup Documentation
 
+**Note:**  
+*It is easier to set up your Proxmox lab using the serial console. A wrong SSH network configuration might lock you out, but with the serial console, you can easily recover from mistakes and save energy while typing.*
+
+In Proxmox, you can access the serial console of a VM that has a serial device by following these steps. **Remember to replace `115` with your specific VM ID or QEMU ID**:
+
+```shell
+root@pve:~# qm set 115 -serial0 socket
+update VM 115: -serial0 socket
+root@pve:~# qm start 115
+root@pve:~# qm terminal 115
+starting serial terminal on interface serial0 (press Ctrl+O to exit)
+```
+---
 ## Overview
 
 This document provides detailed information about the configuration and setup of the `mgmt`, `storage`, `storage interconnect`, and `data` devices within the network. Each device has specific roles and responsibilities to ensure proper routing, NAT, and communication between various network segments.
