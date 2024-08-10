@@ -138,23 +138,25 @@ set system host-name data
 commit
 save
 ```
+### 2.1 IP Addressing Scheme and Access
 
-Here’s how the sections can be organized into tables for clarity and structure:
+| **Network Range**    | **Devices**        | **IP Addresses**     | **Accessible Networks**                           | **Internet Access** |
+|----------------------|--------------------|----------------------|---------------------------------------------------|---------------------|
+| **192.168.0.0/24**   | mgmt               | 192.168.0.1 ✓        | 10.1.10.0/24, 192.168.1.0/24, 172.16.x.x/24, 172.18.0.0/24 | ✓                   |
+|                      | storage            | 192.168.0.2          | 10.1.10.0/24, 192.168.0.0/24, 192.168.1.0/24, 172.16.x.x/24, 172.18.0.0/24 |                     |
+|                      | data               | 192.168.0.3          | 10.1.10.0/24, 192.168.0.0/24, 192.168.1.0/24, 172.16.x.x/24, 172.18.0.0/24 |                     |
+| **10.1.10.0/24**     | mgmt               | 10.1.10.61 ✓         | 192.168.0.0/24, 192.168.1.0/24, 172.16.x.x/24, 172.18.0.0/24 | ✓                   |
+|                      | storage            | 10.1.10.62           | 192.168.0.0/24, 192.168.1.0/24, 172.16.x.x/24, 172.18.0.0/24 |                     |
+|                      | data               | 10.1.10.63           | 192.168.0.0/24, 192.168.1.0/24, 172.16.x.x/24, 172.18.0.0/24 |                     |
+| **192.168.1.0/24**   | Routed by mgmt     | N/A                  | 10.1.10.0/24, 192.168.0.0/24, 172.16.x.x/24, 172.18.0.0/24 | ✓                   |
+| **172.16.x.x/24**    | Managed by storage | N/A                  | 192.168.0.0/24, 10.1.10.0/24, 172.18.0.0/24        |                     |
+| **172.18.0.0/24**    | Managed by data    | N/A                  | 192.168.0.0/24, 10.1.10.0/24, 172.16.x.x/24        |                     |
+| **169.254.0.0/16**   | Storage Interconnect | N/A                | 172.16.x.x/24                                      |                     |
 
-### 2.1 IP Addressing Scheme
+### Legend:
+- **✓**: Indicates that the IP or network has internet access.
+- **172.16.x.x/24**: Represents the combined storage subnets (172.16.0.0/24, 172.16.1.0/24, 172.16.2.0/24).
 
-| Network Range        | Network Type          | Devices        | IP Addresses         |
-|----------------------|-----------------------|----------------|----------------------|
-| 192.168.0.0/24       | Management Network    | mgmt           | 192.168.0.1          |
-|                      |                       | storage        | 192.168.0.2          |
-|                      |                       | data           | 192.168.0.3          |
-| 10.1.10.0/24         | Main Network          | mgmt           | 10.1.10.61           |
-|                      |                       | storage        | 10.1.10.62           |
-|                      |                       | data           | 10.1.10.63           |
-| 192.168.1.0/24       | Data Network          | Routed by mgmt device | N/A              |
-| 172.16.0.0/24, 172.16.1.0/24, 172.16.2.0/24 | Storage Subnets | Managed by storage device | N/A          |
-| 172.18.0.0/24        | Data Subnet           | Managed by data device | N/A              |
-| 169.254.0.0/16       | Storage Interconnect Network | Managed by storage interconnect device | N/A  |
 
 ### 2.2 Routing and NAT
 
