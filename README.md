@@ -1,5 +1,7 @@
 # Advanced-Storage-Networking-Lab
 
+##### This is a growing resource. While I am building the lab, there will be updates. Meantime, enjoy the resource here.
+
 While this configuration will benefit all home lab enthusiasts, it is crafted with storage network engineers, administrators, and cloud engineers in mind.
 
 This guide takes you through everything from the initial setup to advanced configurations of all the VMs, simulating a real storage network engineer/admin's project in an enterprise environment. It’s perfect for professionals at any career stage. The document is modular, making it easy to update or fork for improvements. 
