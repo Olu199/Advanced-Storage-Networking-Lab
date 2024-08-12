@@ -1,4 +1,5 @@
 
+
 | **NetApp Technology** | **Dell EMC (PowerMax/Unity/Isilon)** | **HP Enterprise (3PAR/Primera/Nimble)** | **Pure Storage (FlashArray/FlashBlade)** | **VMware ESXi** Equivalent or Related Feature |
 |-----------------------|--------------------------------------|-----------------------------------------|------------------------------------------|------------------------------------------------|
 | **SnapMirror**        | SRDF / RecoverPoint                  | Remote Copy (RC)                        | ActiveCluster                             | vSphere Replication                            |
@@ -19,3 +20,7 @@
 | **Data Deduplication** | Deduplication (Unity/PowerMax)      | Deduplication                           | Deduplication                             | Deduplication (vSAN, VMFS/NFS via plugins)     |
 | **Compression**       | Compression (Unity/PowerMax)        | Compression                             | Compression                               | vSAN Compression / Deduplication               |
 | **Compaction**        | Data Reduction (Unity)              | Data Compaction                         | Data Reduction                            | vSAN Space Efficiency                          |
+| **High Availability** | PowerMax SRDF/HA                    | HPE 3PAR Persistent Ports / HPE Peer Motion | ActiveCluster                         | vSphere HA / FT                               |
+| **Cluster**           | VPLEX Cluster / PowerMax Cluster     | HPE Cluster Extension                   | FlashStack (with Cisco UCS)               | VMware Cluster                                 |
+| **Node**              | PowerMax Node                        | HPE Node                                | FlashArray Controller Node                | ESXi Host Node                                 |
+| **Disk Shelves**      | VMAX / PowerMax DAEs                 | HPE Drive Enclosures                    | FlashArray Expansion Shelves              | N/A (Managed within external storage arrays)   |
