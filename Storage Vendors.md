@@ -12,3 +12,10 @@
 | **AFF (All Flash FAS)** | PowerMax All Flash                  | HPE Primera / 3PAR All-Flash            | FlashArray //X                            | vSAN All-Flash Configuration                  |
 | **FAS**               | Unity Hybrid / PowerMax Hybrid       | HPE Nimble / 3PAR Hybrid                | FlashArray //C (for hybrid use cases)     | VMFS Datastores backed by hybrid storage arrays |
 | **SyncMirror**        | MirrorView / SRDF                    | Remote Copy (RC)                        | ActiveCluster                             | vSphere Replication with Synchronous Replication (for critical data mirroring) |
+| **Thick Provisioning** | Thick LUNs                          | Thick Volumes                           | Thick Volumes                             | Thick Provisioned Disk                         |
+| **Thin Provisioning** | Thin LUNs                            | Thin Volumes                            | Thin Volumes                              | Thin Provisioned Disk                          |
+| **Space Reservation** | Reserved Capacity (Unity)           | Reserved Space (3PAR)                   | Reserved Capacity                         | VMFS/NFS Reserved Space                        |
+| **Quality of Service (QoS)** | FAST VP / FAST Cache             | Adaptive QoS                            | QoS                                      | Storage I/O Control (SIOC)                     |
+| **Data Deduplication** | Deduplication (Unity/PowerMax)      | Deduplication                           | Deduplication                             | Deduplication (vSAN, VMFS/NFS via plugins)     |
+| **Compression**       | Compression (Unity/PowerMax)        | Compression                             | Compression                               | vSAN Compression / Deduplication               |
+| **Compaction**        | Data Reduction (Unity)              | Data Compaction                         | Data Reduction                            | vSAN Space Efficiency                          |
