@@ -1,4 +1,3 @@
-
 ### Creating CIFS SVM with ONTAP
 
 This guide outlines the steps to create a CIFS SVM (`cifsa`) with the appropriate network interfaces, DNS settings, volume, and CIFS share, ensuring redundancy.
