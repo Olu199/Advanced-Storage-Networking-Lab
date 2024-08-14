@@ -35,7 +35,7 @@ This setup provides redundancy across both nodes.
 - **For `cifsa`:**
 
 ```bash
-net route create -vserver cifsa -destination 0.0.0.0/0 -gateway 198.168.0.1
+net route create -vserver cifsa -destination 0.0.0.0/0 -gateway 198.18.0.1
 ```
 
 #### 4. Set Up DNS
@@ -43,7 +43,7 @@ net route create -vserver cifsa -destination 0.0.0.0/0 -gateway 198.168.0.1
 - **For `cifsa`:**
 
 ```bash
-vserver services dns create -vserver cifsa -domains wina.com -name-servers 198.168.0.2
+vserver services dns create -vserver cifsa -domains wina.com -name-servers 198.18.0.2
 ```
 
 #### 5. Create CIFS Server
