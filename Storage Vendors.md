@@ -59,5 +59,3 @@ Here's the updated table with an additional section explaining what each term do
 | **Object Storage** | | ECS (Elastic Cloud Storage) | HPE Apollo / Scality | FlashBlade / Pure ObjectEngine | vSAN Object Store (via plugins) | **Storing data as objects, like putting different things into labeled boxes.** |
 | **Storage Grid** | | ECS (Elastic Cloud Storage) | HPE Apollo / Scality | Pure Storage FlashBlade | N/A (Typically managed outside of VMware ESXi) | **A system that stores data across many places so it’s safe and easy to access, like a big network of warehouses.** |
 | **S3 Compatible Storage** | | ECS (Elastic Cloud Storage) | HPE Apollo / Scality | FlashBlade / Pure ObjectEngine | vCloud Director Object Storage Extension | **Storage that works with the S3 protocol, which is a way to store and access data over the internet, like storing files in the cloud.** |
-
-This addition should help explain the technical terms in a way that's accessible to both younger students and professionals.

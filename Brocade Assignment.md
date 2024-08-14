@@ -11,7 +11,7 @@ Here's the breakdown:
 - **A**pple: **A**dd Zones to Configuration
 - **S**trudel: **S**ave Configuration
 - **E**very: **E**nable the Configuration
-- **V**alentine: **V**erify the Zoning
+- **V**alentine: **V**erify the Zoningaqqqq
 ---
 ### Brocade Zoning for CHGSAN01WP and CHGIBM01PS
 
