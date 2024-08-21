@@ -1,3 +1,6 @@
+Delete CEPH
+
+
 ```
 systemctl stop ceph-mon.target
 systemctl stop ceph-mgr.target
