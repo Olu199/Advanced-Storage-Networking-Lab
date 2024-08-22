@@ -156,7 +156,7 @@ save
 4. **System Settings**
 ```shell
 configure
-set system host-name storage
+set system host-name storage1
 commit
 save
 ```
