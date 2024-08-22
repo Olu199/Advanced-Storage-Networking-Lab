@@ -115,7 +115,7 @@ save
 configure
 set system name-server 8.8.8.8
 set system name-server 8.8.4.4
-set system host-name mgmt
+set system host-name mgmt1
 commit
 save
 ```
