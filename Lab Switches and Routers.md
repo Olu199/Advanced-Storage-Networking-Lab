@@ -193,7 +193,7 @@ save
 4. **System Settings**
 ```shell
 configure
-set system host-name data
+set system host-name data1
 commit
 save
 ```
