@@ -115,7 +115,7 @@ save
 configure
 set system name-server 8.8.8.8
 set system name-server 8.8.4.4
-set system host-name mgmt
+set system host-name mgmt1
 commit
 save
 ```
@@ -156,7 +156,7 @@ save
 4. **System Settings**
 ```shell
 configure
-set system host-name storage
+set system host-name storage1
 commit
 save
 ```
@@ -193,7 +193,7 @@ save
 4. **System Settings**
 ```shell
 configure
-set system host-name data
+set system host-name data1
 commit
 save
 ```
@@ -270,7 +270,7 @@ save
 configure
 set system name-server 8.8.8.8
 set system name-server 8.8.4.4
-set system host-name mgmt
+set system host-name mgmt2
 commit
 save
 ```
@@ -309,7 +309,7 @@ save
 4. **System Settings**
 ```shell
 configure
-set system host-name storage
+set system host-name storage2
 commit
 save
 ```
@@ -346,7 +346,7 @@ save
 4. **System Settings**
 ```shell
 configure
-set system host-name data
+set system host-name data2
 commit
 save
 ```
