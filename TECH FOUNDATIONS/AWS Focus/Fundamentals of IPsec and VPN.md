@@ -20,7 +20,7 @@
 
 **IPsec Phases:**
 
-1. **IKE Phase 1 (Initial Setup):**
+1. **IKE (Internet Key Exchange) Phase 1 (Initial Setup):**
    - **Purpose:** This phase is designed to establish a secure and authenticated communication channel between the peers.
    - **Process:**
      - **Authentication:** The peers authenticate each other using either a pre-shared key (a shared password) or digital certificates.

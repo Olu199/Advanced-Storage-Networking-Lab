@@ -1,6 +1,3 @@
-Here’s the revised note incorporating the details from the latest image:
-
----
 
 ## Storage Tutorial
 
