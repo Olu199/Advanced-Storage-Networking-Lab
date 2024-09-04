@@ -1,7 +1,0 @@
-- **.vmx**: Stores the virtual machine settings.
-- **.vmdk**: Virtual disk files that store the contents of the virtual machine hard disk drive(s).
-- **.nvram**: Stores the state of the virtual machine BIOS.
-- **.vmem**: Memory paging file.
-- **.vmsn**: Snapshot state file.
-- **.vmss**: Stores the state of a suspended virtual machine.
-- **.log**: Log file.

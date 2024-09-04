@@ -1,5 +1,33 @@
 ## Follow this to get started: [link](https://github.com/MRCzap/ontapsimulator)
 
+extract using this command
+
+tar -xvf <ova>
+
+
+qm set 108 --delete ide0
+qm set 108 --delete ide1
+qm set 108 --delete ide2
+qm set 108 --delete ide3
+
+qm set 108 --delete unused0
+qm set 108 --delete unused1
+qm set 108 --delete unused2
+qm set 108 --delete unused3
+
+
+qm importdisk 108 vsim-NetAppDOT-simulate-disk1.vmdk local-lvm --format qcow2
+qm importdisk 108 vsim-NetAppDOT-simulate-disk2.vmdk local-lvm --format qcow2
+qm importdisk 108 vsim-NetAppDOT-simulate-disk3.vmdk local-lvm --format qcow2
+qm importdisk 108 vsim-NetAppDOT-simulate-disk4.vmdk local-lvm --format qcow2
+
+qm set 108 --ide0 local-lvm:vm-108-disk-0
+qm set 108 --ide1 local-lvm:vm-108-disk-1
+qm set 108 --ide2 local-lvm:vm-108-disk-2
+qm set 108 --ide3 local-lvm:vm-108-disk-3
+
+
+
 
 
 ### 1. Convert the Node to a Template
