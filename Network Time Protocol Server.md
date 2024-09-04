@@ -1,3 +1,4 @@
+
 ### Steps to Configure Windows Server 2016 as an NTP Server
 
 1. **Open the Command Prompt as Administrator:**
@@ -7,11 +8,10 @@
    - Enter the following commands to configure the Windows Time service to act as an NTP server.
 
 ```shell
-w32tm /config /manualpeerlist:"0.pool.ntp.org,1.pool.ntp.org,2.pool.ntp.org" /syncfromflags:manual /reliable:YES /update
+w32tm /config /manualpeerlist:"time.nist.gov,time-c.nist.gov,time-d.nist.gov" /syncfromflags:manual /reliable:YES /update
 net stop w32time
 net start w32time
 ```
-   - Replace the NTP servers (`0.pool.ntp.org,1.pool.ntp.org,2.pool.ntp.org`) with the ones you prefer to use.
 
 3. **Open the Registry Editor:**
    - Press `Win + R`, type `regedit`, and press Enter.
@@ -54,12 +54,17 @@ Ensure that your firewall settings allow NTP traffic (UDP port 123) so that the 
 
 By following these steps, you should be able to configure your Windows Server 2016 to act as an NTP server, providing accurate time synchronization for your network devices.
 
+### Ontap NTP Server Configuration
 
+In Ontap, set the NTP server like this:
 
-
-In Ontap Set NTP Server like this
-
+```shell
 ntp server create -server 172.16.192.2
+```
 
+Then verify with:
+
+```shell
 set d
 cluster time-service ntp status show
+```
