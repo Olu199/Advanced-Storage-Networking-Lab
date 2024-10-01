@@ -1,4 +1,4 @@
-#THIS LAB IS UNDER MIGRATION TO ESXI VCENTER TO IMPROVE ENTERPRISE COMPENTENCY 
+# THIS LAB IS UNDER MIGRATION TO ESXI VCENTER TO IMPROVE ENTERPRISE COMPENTENCY 
 # Advanced-Storage-Networking-Lab
 
 ##### This is a growing resource. While I am building the lab, there will be updates. Meantime, enjoy the resource here.
